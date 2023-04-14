@@ -1,0 +1,23 @@
+.scroll {
+  width: 80%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 0.5rem;
+
+  &-item {
+    height: auto;
+    background-color: green;
+    border-radius: 10px;
+    display: flex;
+    padding: 0.5rem;
+    cursor: pointer;
+
+    & .item {
+      width: 8rem;
+      height: 8.8rem;
+      background-color: #ccc;
+      border-radius: 5px;
+    }
+  }
+}
