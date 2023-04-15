@@ -6,6 +6,10 @@
   gap: 2rem;
   padding: 2rem;
 
+  @include repond-phone {
+    width: 100%;
+  }
+
   &__text {
     height: 10rem;
     display: flex;
@@ -14,7 +18,9 @@
     justify-content: center;
     gap: 1rem;
     margin-bottom: 5rem;
-
+    @include repond-phone {
+      text-align: center;
+    }
     & h1 {
       font-weight: 500;
       font-size: 3rem;
@@ -31,6 +37,10 @@
     display: flex;
     gap: 1rem;
 
+    @include repond-phone {
+      flex-direction: column;
+    }
+
     &--form {
       width: 70%;
       height: auto;
@@ -40,9 +50,17 @@
       padding: 1rem;
       // background-color: green;
 
+      @include repond-phone {
+        width: 100%;
+      }
+
       & .name-field {
         display: flex;
         gap: 2rem;
+
+        @include repond-phone {
+          flex-direction: column;
+        }
 
         & .field {
           display: flex;
@@ -62,6 +80,10 @@
             border: none;
             border: 1px solid #ccc;
             border-radius: 5px;
+
+            @include repond-phone {
+              width: 100%;
+            }
           }
           & input[type="email"] {
             height: 4.5rem;
@@ -71,6 +93,10 @@
             border: none;
             border: 1px solid #ccc;
             border-radius: 5px;
+
+            @include repond-phone {
+              width: 100%;
+            }
           }
           & input[type="number"] {
             height: 4.5rem;
@@ -80,6 +106,10 @@
             border: none;
             border: 1px solid #ccc;
             border-radius: 5px;
+
+            @include repond-phone {
+              width: 100%;
+            }
           }
         }
       }
@@ -124,6 +154,10 @@
       flex-direction: column;
       align-items: center;
       gap: 5rem;
+
+      @include repond-phone {
+        width: 100%;
+      }
 
       & .location {
         // background-color: green;

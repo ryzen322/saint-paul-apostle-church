@@ -14,9 +14,14 @@
 .main {
   margin-top: 1rem;
   width: 80%;
-  height: 70rem;
+  height: auto;
   display: flex;
   gap: 1rem;
+
+  @include repond-phone {
+    width: 100%;
+    flex-direction: column;
+  }
 
   &__menu {
     position: relative;
@@ -52,11 +57,14 @@
   &__sub {
     width: 34rem;
     height: 70rem;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.25rem;
+
+    @include repond-phone {
+      width: 100%;
+    }
 
     & .schedule {
       width: 100%;
@@ -68,6 +76,10 @@
 
       & header {
         margin: 1rem 0;
+
+        @include repond-phone {
+          text-align: center;
+        }
       }
 
       &__text {

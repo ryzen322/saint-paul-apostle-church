@@ -2,17 +2,25 @@
   height: auto;
   width: 80%;
 
+  @include repond-phone {
+    width: 100%;
+  }
+
   &__content {
     height: auto;
     width: 100%;
     border-radius: 5px;
     margin-bottom: 1rem;
 
-    // // background-color: aqua;
+    // background-color: aqua;
     // display: flex;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
     gap: 1rem;
+
+    @include repond-phone {
+      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    }
 
     &--content {
       flex: 1;
@@ -24,11 +32,21 @@
       display: flex;
       gap: 1rem;
 
+      @include repond-phone {
+        flex-direction: column;
+        align-items: center;
+      }
+
       & .img-content {
         width: 30rem;
         height: 25rem;
         background-color: pink;
         border-radius: 5px;
+
+        @include repond-phone {
+          width: 100%;
+          height: 100%;
+        }
 
         & img {
           height: 100%;
@@ -40,7 +58,6 @@
 
       & .text-content {
         flex: 1;
-        // height: 25rem;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
         padding: 1rem 1rem;
@@ -64,6 +81,10 @@
           display: flex;
           justify-content: flex-end;
           font-weight: 400;
+
+          @include repond-phone {
+            justify-content: center;
+          }
         }
       }
     }
