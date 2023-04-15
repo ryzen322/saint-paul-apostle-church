@@ -30,6 +30,10 @@
     background-color: #ccc;
     border-radius: 5px;
 
+    @include repond-phone {
+      width: 100%;
+    }
+
     & img {
       height: 100%;
       width: 100%;

@@ -293,6 +293,9 @@ button {
     width: 136rem;
     background-color: #ccc;
     border-radius: 5px; }
+    @media (max-width: 31.25em) {
+      .main__menu {
+        width: 100%; } }
     .main__menu img {
       height: 100%;
       width: 100%;
